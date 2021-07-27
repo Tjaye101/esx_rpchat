@@ -1,11 +1,13 @@
 
 ### Original: https://github.com/esx-framework/esx_rpchat
 
+# What i did
+-  Added the **/insta** Command wich just triggers the Instagram Command
+
 # Commands:
 - **/ooc**
 - **/twt**
 - **/anontwt**
-- **/insta**
 - **/ad**
 - **/msg**
 - **/me** (enable in server.lua and client.lua)
