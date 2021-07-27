@@ -5,6 +5,7 @@
 - **/ooc**
 - **/twt**
 - **/anontwt**
+- **/insta**
 - **/ad**
 - **/msg**
 - **/me** (enable in server.lua and client.lua)
