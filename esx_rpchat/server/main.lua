@@ -30,6 +30,22 @@ RegisterCommand('twt', function(playerId, args, rawCommand)
 	end
 end, false)
 
+-- Insta Command
+RegisterCommand('insta', function(playerId, args, rawCommand)
+	if playerId == 0 then
+		print('esx_rpchat: you can\'t use this command from console!')
+	else
+		args = table.concat(args, ' ')
+
+		local playerName = GetRealPlayerName(playerId)
+
+		TriggerClientEvent('chat:addMessage', -1, {
+			template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(255, 137, 2, 0); border-radius: 3px;"><i class="fas fa-globe"></i> {0}:<br> {1}</div>',
+			args = {_U('insta_prefix', playerName), args}, color = {255, 255, 255}
+		})
+	end
+end, false)
+
 -- ANONTWT Command
 RegisterCommand('anontwt', function(playerId, args, rawCommand)
 	if playerId == 0 then
