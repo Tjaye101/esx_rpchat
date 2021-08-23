@@ -40,7 +40,7 @@ RegisterCommand('insta', function(playerId, args, rawCommand)
 		local playerName = GetRealPlayerName(playerId)
 
 		TriggerClientEvent('chat:addMessage', -1, {
-			template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgba(255, 137, 2, 0); border-radius: 3px;"><i class="fas fa-globe"></i> {0}:<br> {1}</div>',
+			template = '<div style="padding: 0.5vw; margin: 0.5vw; background-color: rgb(255, 102, 0); border-radius: 3px;"><i class="fas fa-globe"></i> {0}:<br> {1}</div>',
 			args = {_U('insta_prefix', playerName), args}, color = {255, 255, 255}
 		})
 	end
